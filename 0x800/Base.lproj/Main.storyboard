@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
@@ -144,7 +143,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="4" y="77" width="70" height="70"/>
+                                            <rect key="frame" x="4" y="78" width="70" height="70"/>
                                             <mask key="subviews">
                                                 <include reference="a81-73-g3M"/>
                                             </mask>
@@ -170,7 +169,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="78" y="77" width="70" height="70"/>
+                                            <rect key="frame" x="78" y="78" width="70" height="70"/>
                                             <mask key="subviews">
                                                 <include reference="C5R-r5-rPc"/>
                                             </mask>
@@ -196,7 +195,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="152" y="77" width="70" height="70"/>
+                                            <rect key="frame" x="152" y="78" width="70" height="70"/>
                                             <mask key="subviews">
                                                 <include reference="t8f-on-ls5"/>
                                             </mask>
@@ -222,7 +221,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="226" y="77" width="70" height="70"/>
+                                            <rect key="frame" x="226" y="78" width="70" height="70"/>
                                             <mask key="subviews">
                                                 <include reference="uSf-8M-yQG"/>
                                             </mask>
@@ -248,7 +247,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="4" y="150" width="70" height="70"/>
+                                            <rect key="frame" x="4" y="152" width="70" height="70"/>
                                             <mask key="subviews">
                                                 <include reference="Tua-8M-ALy"/>
                                             </mask>
@@ -274,7 +273,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="78" y="150" width="70" height="70"/>
+                                            <rect key="frame" x="78" y="152" width="70" height="70"/>
                                             <mask key="subviews">
                                                 <include reference="Pzp-zg-hE4"/>
                                             </mask>
@@ -300,7 +299,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="152" y="150" width="70" height="70"/>
+                                            <rect key="frame" x="152" y="152" width="70" height="70"/>
                                             <mask key="subviews">
                                                 <include reference="ih1-dy-xuR"/>
                                             </mask>
@@ -326,7 +325,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="226" y="150" width="70" height="70"/>
+                                            <rect key="frame" x="226" y="152" width="70" height="70"/>
                                             <mask key="subviews">
                                                 <include reference="t1R-V2-sQ6"/>
                                             </mask>
@@ -352,7 +351,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="4" y="224" width="70" height="70"/>
+                                            <rect key="frame" x="4" y="226" width="70" height="70"/>
                                             <mask key="subviews">
                                                 <include reference="9Ng-0Q-H3l"/>
                                             </mask>
@@ -378,7 +377,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="78" y="224" width="70" height="70"/>
+                                            <rect key="frame" x="78" y="226" width="70" height="70"/>
                                             <mask key="subviews">
                                                 <include reference="LJu-17-6j1"/>
                                             </mask>
@@ -404,7 +403,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="152" y="224" width="70" height="70"/>
+                                            <rect key="frame" x="152" y="226" width="70" height="70"/>
                                             <mask key="subviews">
                                                 <include reference="RBs-3r-QeM"/>
                                             </mask>
@@ -430,7 +429,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="226" y="224" width="70" height="70"/>
+                                            <rect key="frame" x="226" y="226" width="70" height="70"/>
                                             <mask key="subviews">
                                                 <include reference="J2i-p3-FRs"/>
                                             </mask>
