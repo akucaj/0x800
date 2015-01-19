@@ -20,7 +20,6 @@ class BoardModel {
     let refreshBoardNotif = "REFRESH_BOARD"
     let gameOverNotif = "GAME_OVER"
     var score:Int = 0
-    var boardChanged:Bool = false
     
     // Singleton - shared instance
     class var sharedInstance : BoardModel {
@@ -32,8 +31,8 @@ class BoardModel {
     
     func clear() {
         score = 0
-        for var i=0; i<cols; i++ {
-            for var j=0; j<rows; j++ {
+        for i in 0...cols-1 {
+            for j in 0...rows-1 {
                 values[i][j] = 0
             }
         }
@@ -46,14 +45,14 @@ class BoardModel {
         return values[x-1][y-1]
     }
     
-    // Draw a coordinate which needs to be empty and put there a value "2"
+    // Draw a coordinate pointing to empty tile and put there a value "2"
     func draw() {
         let count = getEmptyFieldsNumber()
         if (count > 0) {
             // draw the matrix index
             var index = Int(arc4random_uniform(UInt32(count)))
-            for var i=0; i<cols; i++ {
-                for var j=0; j<rows; j++ {
+            for i in 0...cols-1 {
+                for j in 0...rows-1 {
                     if values[i][j] == 0 {
                         if (index-- <= 0) {
                             // enter initial value
@@ -71,8 +70,8 @@ class BoardModel {
     
     func getEmptyFieldsNumber() ->Int {
         var count = 0
-        for var i=0; i<cols; i++ {
-            for var j=0; j<rows; j++ {
+        for i in 0...cols-1 {
+            for j in 0...rows-1 {
                 if values[i][j] == 0 {
                     count++
                 }
@@ -173,7 +172,7 @@ class BoardModel {
             }
         }
         // now, return back the shifted data
-        for var i=0; i<size; i++ {
+        for i in 0...size-1 {
             if (i < data.count) {
                 result.append(data[i])
             } else {
@@ -194,9 +193,3 @@ class BoardModel {
     }
 }
 
-
-// Power function
-infix operator ** {}
-func ** (num: Double, power: Double) -> Double{
-    return pow(num, power)
-}

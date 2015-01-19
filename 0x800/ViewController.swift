@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var screen: UIView!
     @IBOutlet weak var scoreCount: UILabel!
     @IBOutlet weak var boardView: UIView!
     let bm = BoardModel.sharedInstance
@@ -43,7 +42,7 @@ class ViewController: UIViewController {
     func onGameOver(notification: NSNotification){
         println("Received a notification \(notification.name)")
         
-        var alert = UIAlertController(title: "Upss", message: "Koniec gry\nMoże nastepnym razem pójdzie lepiej?", preferredStyle: UIAlertControllerStyle.Alert)
+        var alert = UIAlertController(title: "Oops", message: "Game over\nKeep trying. Good luck!", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
             println("Handle Ok logic here")
         }))
@@ -53,31 +52,31 @@ class ViewController: UIViewController {
 
     //MARK: - Buttons actions
     @IBAction func rightBttnTapped(sender: AnyObject) {
-        println("PRAWY przycisk")
+        println("RIGHT button")
         
         bm.moveRight()
     }
 
     @IBAction func leftBttnTapped(sender: AnyObject) {
-        println("LEWY przycisk")
+        println("LEFT button")
         
         bm.moveLeft()
     }
     
     @IBAction func topBttnTapped(sender: AnyObject) {
-        println("GÓRNY przycisk")
+        println("TOP button")
         
         bm.moveTop()
     }
     
     @IBAction func downBttnTapped(sender: AnyObject) {
-        println("DOLNY przycisk")
+        println("BOTTOM button")
         
         bm.moveBottom()
     }
     
     @IBAction func newGameBttnTapped(sender: AnyObject) {
-        println("NOWA gra!")
+        println("NEW game!")
         
         bm.clear()
     }
@@ -85,11 +84,10 @@ class ViewController: UIViewController {
     
     //MARK: Board
     func refreshBoard() {
-        for var x=1; x<=cols; x++ {
-            for var y=1; y<=rows; y++ {
+        for x in 1...cols {
+            for y in 1...rows {
                 let tile = getTileView(x:x, y:y)
                 let label = getLabelFromView(tile!)
-//                println("x=\(x), y=\(y), tile=\(tile), label=\(label)")
                 var value = bm.valueFor(x:x, y:y)
                 label?.text = value == 0 ? "" : String(value)
             }
